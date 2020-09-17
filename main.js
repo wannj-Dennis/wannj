@@ -1,13 +1,19 @@
     
 // set timeout
+document.getElementById('head-one').innerHTML = 'DENNI WANJ';
 
+
+    
 setTimeout(
-    function () {
+    function () {        
         let val = document.getElementById('full-page');
-        val.remove();
+        val.style.height = '0';
+        let vals = document.getElementById('home-page');
+        vals.style.opacity = '1';
+        }, 2000
+    );
+    
 
-    }, 60000
-);
 
  //document.getElementById('one').onclick = clicker (); // this here calls the function on page load 
 
