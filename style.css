@@ -25,6 +25,14 @@ html, body {
     
 }
 
+p,h1,h2,h4 {
+    font-family: 'Quicksand', sans-serif;  
+}
+
+p {
+    color: rgba(35,43,43,1);
+}
+
 
  #head-one {
     font-family: 'Quicksand', sans-serif;
@@ -72,11 +80,16 @@ html, body {
 }
 
 #one {
+    opacity: 1;
     background: rgba(218, 247, 146, 1);
+    transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -webkit-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -moz-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    
 }
 
 .phase-one h4, p {
-    animation: 3s slide-up;
+    animation: 6.5s slide-up;
     margin-top: 0%;
 }
 
@@ -94,11 +107,17 @@ html, body {
 
 #two {
     background: rgba(163, 228, 215, 1);
+    transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -webkit-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -moz-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
 
 }
 
 #three{
     background: rgba(247, 220, 147, 1);
+    transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -webkit-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
+    -moz-transition: height 0.5s cubic-bezier(1, 0.165, 0.82, 0.075);
 }
 
 #four {

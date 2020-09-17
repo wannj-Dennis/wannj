@@ -17,7 +17,7 @@ setTimeout(
 
  //document.getElementById('one').onclick = clicker (); // this here calls the function on page load 
 
-document.getElementById('one').onclick = function clicker ()  { // thid here does what its intended
+document.getElementById('one').onclick = function clicker ()  { // this here does what its intended
     document.getElementById('two').scrollIntoView({behavior: "smooth"});
 }
 
