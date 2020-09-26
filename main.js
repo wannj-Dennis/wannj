@@ -1,6 +1,6 @@
     
 // set timeout
-document.getElementById('head-one').innerHTML = 'DENNI WANJ';
+document.getElementById('head-one').innerHTML = 'Wanj Dennis';
 
 
     
@@ -17,15 +17,40 @@ setTimeout(
 
  //document.getElementById('one').onclick = clicker (); // this here calls the function on page load 
 
-document.getElementById('one').onclick = function clicker ()  { // this here does what its intended
-    document.getElementById('two').scrollIntoView({behavior: "smooth"});
+
+document.getElementById('one').onclick = function clicker ()  { 
+    
+    let twice = document.getElementById('two');
+
+    twice.scrollIntoView({behavior: "smooth"});
+
+    twice.getElementsByTagName('div')[0].setAttribute('id', 'slider2');
+    console.log('test');
+
+
 }
 
 document.getElementById('two').onclick = () => {
+
+    let thrice = document.getElementById('three');
+
+    document.getElementById('two').getElementsByTagName('div')[0].removeAttribute('id', 'slider2');
+
     document.getElementById('three').scrollIntoView({behavior: "smooth"});
+    thrice.getElementsByTagName('div')[0].setAttribute('id', 'slider2');
 }
 
 document.getElementById('three').onclick = () => {
-    document.getElementById('four').scrollIntoView({behavior: "smooth"});
+
+    let fourth = document.getElementById('four');
+    
+    document.getElementById('three').getElementsByTagName('div')[0].removeAttribute('id', 'slider2');
+
+    fourth.scrollIntoView({behavior: "smooth"});
+
+}
+
+document.getElementById('four').onclick = function () {
+    document.getElementById('one').scrollIntoView({behavior: "smooth"});
 }
 
