@@ -8,12 +8,12 @@ setTimeout(
     function () {        
         let val = document.getElementById('full-page');
         val.style.height = '0';
+        let val_text = document.getElementById('head-one');
+        val_text.opacity = 0;
         let vals = document.getElementById('home-page');
         vals.style.opacity = '1';
         }, 2000
     );
-    
-
 
  //document.getElementById('one').onclick = clicker (); // this here calls the function on page load 
 
@@ -43,14 +43,19 @@ document.getElementById('two').onclick = () => {
 document.getElementById('three').onclick = () => {
 
     let fourth = document.getElementById('four');
-    
+    fourth.getElementsByTagName('div')[0].setAttribute('class', 'parallax');
+
+
+
     document.getElementById('three').getElementsByTagName('div')[0].removeAttribute('id', 'slider2');
 
     fourth.scrollIntoView({behavior: "smooth"});
 
 }
 
-document.getElementById('four').onclick = function () {
+document.getElementById('four').onclick = function () { 
     document.getElementById('one').scrollIntoView({behavior: "smooth"});
+
 }
+
 
