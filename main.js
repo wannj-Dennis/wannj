@@ -9,7 +9,7 @@ setTimeout(
         let val = document.getElementById('full-page');
         val.style.height = '0';
         let val_text = document.getElementById('head-one');
-        val_text.opacity = 0;
+        val_text.opacity = 0 ;
         let vals = document.getElementById('home-page');
         vals.style.opacity = '1';
         }, 2000
