@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,10 +16,28 @@
     <div id="home-page">
         <div id="left-half">
             <div id="img-container">
-                <div id="parallax">
+                <div id="" class="parallax">
                     <img src="/img/website image.png" alt="">
                 </div>
-                <div id="info">
+                <div id="info" class="parallax">
+                    <div class="head-info">
+                        <h3>Javascript Developer</h3>
+                        <h4 id="location-header"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</h4>                        
+                    </div>
+                    
+                    <p id="level" class="info-details">
+                        <i class="fas fa-user-ninja"></i>
+                        <span class="righter">6KYU / 480 XP / 11</span>
+
+                    </p>
+                    <p id="projects" class="info-details links"></p>
+                    
+                    <p class="info-details">
+                        <span class="links"><i class="fab fa-twitter"></i> Twitter</span>
+                        <span class="links"><i class="fab fa-github"></i> Github</span>
+                        <span class="links"><i class="fab fa-discord"></i> Discord</span>
+                    </p>
+                    
                 </div>                
             </div>            
             
@@ -26,7 +45,7 @@
 
         <div id="right-half">
             <div id="one" class="rights">
-                <div id="slider" class="info">
+                <div id="slider" class="info centers">
                     <blockquote>
                         <p>A designer first with a keen eye on web development both frontEnd and Backend. I am motivated by just how much limitless the web is and how great it is to express, present and connect with the world through the web; not only that but also making it a dang great experience for all who interact with my solutions.</p>
                         <cite>the web experience should be enjoyable</cite>
@@ -35,22 +54,67 @@
             </div>
             <div id="two" class="rights">
                 <div class="info">
+                    <h2>Today's problem</h2>
                     <blockquote>
-                        <H2>Todays problem</H2>
-                        <p></p>
+                        How can I make .dropdown-content overflow to the right side of #sidebar without changing size of sidebar? I've tried using floats but that did not work. I've also tried containing the first .squares and .dropdown-content together but that causes the second .squares to be positioned away from the bottom of the first .squares
                     </blockquote>
+
+                    <div class="centers">
+                        <iframe id="frame3" src="//jsfiddle.net/wannj/o379eqa5/2/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                    
+                    <div>
+                        <blockquote>
+                            .dropdown-content is a class in the problem that ambiguously sits between two square classes.
+                            The idea is to solve the problem of placement of that class within the squares block and have it also display and show the dropdown content on the right of the squares block    
+                        </blockquote>
+                    </div>
+                                        
+                    
                 </div>
 
             </div>
-            <div id="three" class="rights">
-                <div id="biography" class="info">
-                    <blockquote>
-                        <p>My programming career started off slowly, and was all over the place before I found my footing with the web and Javascript was my weapon of choice. I actually love the language deeply and have been conditioning myself in all aspects of it, from frontend, data handling to backend and in the near future to security. It has been kind to me and also I love how diverse it is, almost natural language like in the way you can solve a particular problem in so so many ways. I see it as a strength of the language, personally because it has allowed me be this good with still a lot more to learn.</p>
-                    </blockquote>
+            <div id="three" class="rights info">
+                <h2>Solved it?</h2>
+                <div id="threes">
+                    <blockquote><cite>Compare with my solution</cite></blockquote>
+                    <div>
+                    <iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    <iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>                    
+                    </div>  
                 </div>
+
+                <div class="btns">
+                    <button id="btn1" class="scroller">Solution Explanation >></button>
+                </div> 
+               
+            </div>
+            <div id="three-half" class="rights">
+                <div id="notes">
+                    <div>
+                        <h4>the HTML</h4>
+                        <p>insert</p>
+                    </div>
+
+                    <div>
+                        <h4>the CSS</h4>
+                    </div>
+                    
+                    
+                    <ol class="lists">
+                        <li>make sure the .dropdown-content is within a .square</li>
+                        <li>position of .dropdown-content should be absolute</li>
+                        <li> .dropdon-content set display to none</li>
+                        <li> get display of .dropdpown-content to block on hover</li>
+                    </ol>
+                </div>
+                <div class="btns">
+                    <button id="btn2" class="scroller"> << Back</button>
+                </div> 
             </div>
             <div id="four" class="rights">
                 <div class="info"></div>
+                <h2>projects</h2>
             </div>
         </div>
     </div>

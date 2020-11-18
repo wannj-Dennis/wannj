@@ -1,0 +1,24 @@
+1. make the left side black (with a color gradient background)
+2. make the right side have contrasting tabs to the static left side
+3. scrol through every tab by the click of the current tab and scroll up traditionally
+4. transition the right side only three times and then create a disappearing effect that would enhance the left side to fill up 
+
+- content
+white text on black backgrounds and vice versa
+"welcome" should be the first title
+ make a bullet that grows in size upon hovering to create a dynamic feel of the site
+bullet content- "web development is my domain" with a read more option...
+second third a fourth titles
+ "design"
+ "creativity"
+ "passion"
+ "obstinate"
+page 2 should have a list of previous projects done in a format that shows chronology or embedded videos from yotube
+
+page 3 should have apast countdown from the last completed project and the interactions achieved.
+should be a circular percentage form
+
+page four should have contact details for discord, slack and twitter
+
+design flow project going into portfolio page
+espouse going into portfolio page
