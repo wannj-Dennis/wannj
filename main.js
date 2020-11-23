@@ -83,7 +83,7 @@ document.getElementById('btn2').onclick = function () {
 document.getElementById('threes').onclick = () => {
 
     let fourth = document.getElementById('four');
-    fourth.getElementsByTagName('div')[0].setAttribute('class', 'parallax');
+//    fourth.getElementsByTagName('div')[0].setAttribute('class', 'parallax');
 
 
 
