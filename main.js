@@ -94,9 +94,21 @@ document.getElementById('threes').onclick = () => {
 }
 
 
+document.getElementById('forwards').onclick = function () {
+    document.getElementById('first-project').classList.add('move-left');
+    
+}
+
+
+document.getElementById('backs').onclick = function () {
+    document.getElementById('first-project').classList.add('move-right');
+    
+}
+
+/*
 document.getElementById('four').onclick = function () { 
     document.getElementById('one').scrollIntoView({behavior: "smooth"});
 
 }
-
+*/
 
