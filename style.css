@@ -6,10 +6,14 @@ html, body {
     height: 100%;
 
     overflow: hidden;
-
-    position: relative;
-
     font-family: 'Roboto Mono', monospace;
+
+}
+
+body {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
 }
 
 #full-page {
@@ -37,9 +41,16 @@ html, body {
 }
 
 
-#left-half p {
+h2, h3, h4, p {
     font-size: 1em;
     color: ivory;
+}
+
+.headings {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2em;
 }
 
 
@@ -86,8 +97,6 @@ html, body {
         
     }
     
-
-    
     #user-image {
         position: absolute;
         width: 100%;
@@ -103,7 +112,7 @@ html, body {
         width: 50vw;
         
         margin-left: 5%;
-        margin-top: 1%;
+        margin-top: 10%;
         padding: 0 auto;
         height: 100vh;
         object-fit: contain;
@@ -111,9 +120,7 @@ html, body {
         z-index: 1;
 
     }
-   
 
-   
     #right-half {
         display: flex;
         flex-direction: column ;
@@ -134,15 +141,13 @@ html, body {
         z-index: 1;
     
     }
-
-    
+  
     .rights {
         display: flex;
         height: 100vh;
         width: 100%;
         /*background: linear-gradient(180deg, rgb(255, 222, 209) 0%, rgb(175, 184, 183) 50%, rgb(6, 19, 15) 100%); */
     }
-
     
     .centers {
         display: flex;
@@ -151,13 +156,11 @@ html, body {
         flex-direction: column;
     }
 
-
-
     p, blockquote, ol {
         font-size: 1em;
         color: rgb(230, 230, 250);
         margin-left: 100px; /* margin left for the details about self*/
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     .two-info {
@@ -168,7 +171,6 @@ html, body {
         margin-top: 2%;
     }
 
-    
     #frame3 {
         min-width: 350px;
         width: 450px;
@@ -197,7 +199,6 @@ html, body {
 
     /* not included in the smaller windows*/
 
-   
     .info-details {
         border-bottom: 4px solid rgb(175, 184, 183);
         margin: 5px auto;
@@ -207,10 +208,12 @@ html, body {
 
     /* not included in the smaller windows*/
 
-
     #three{
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
     }
 
     #three iframe {
@@ -240,9 +243,8 @@ html, body {
         height: 40px;
         border-radius: 5px;
         cursor: pointer;    
-        }
-
-    
+    }
+   
     #notes {
         width: 100%;
         font-size: .95rem;
@@ -324,6 +326,8 @@ html, body {
         display: none;
     }
 
+
+
     #first-project {
         display: block;
     }
@@ -341,6 +345,10 @@ html, body {
 
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+
+    #backs {
+        margin-left: 25px;
     }
 
     @keyframes button-effects {
@@ -372,7 +380,6 @@ html, body {
         transition-duration: 1s;
 
         animation: 1s disappear;
-
 
     }
 
@@ -450,8 +457,35 @@ html, body {
         }
     }
 
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 5%;
 
+        height: 50vh;
+        position: fixed;
+        left: -5%;
+        top: 30%;
 
+        padding: 0;
+        margin: 0;
+
+        background-color: transparent;
+
+        z-index: 2;
+    }
+
+    .fab {
+        font-size: 30px;
+        color: rgb(255, 255, 240);
+        margin: 2px 0;
+    }
+
+    .fab:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
 }
 
 
@@ -786,12 +820,25 @@ html, body {
         }
     }
 
+    #footer {
+        display: none;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
 
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
 
+    }
 
-
-
-
+    .fab {
+        font-size: 30px;
+        color: rgb(255, 255, 240);
+        margin: 0 20px;
+        
+    }
 
 
 }

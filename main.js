@@ -2,7 +2,7 @@
 // set timeout
 document.getElementById('head-one').innerHTML = 'Wanj Dennis';
 
-
+document.getElementById('footer').style.display = 'none';
 
 setTimeout(
     function () {        
@@ -14,6 +14,7 @@ setTimeout(
         let val = document.getElementById('full-page');
         document.getElementById('head-one').style.display = 'none';
         val.style.height = '0';        
+        document.getElementById('footer').style.display = 'flex';
         }, 2000
     );
 
@@ -46,22 +47,40 @@ document.getElementById('two').onclick = () => {
 
 let third_page = document.querySelector('#profile-img');
 let righty = document.getElementById('right-half');
+let widthy = window.innerWidth;
 
 
 righty.addEventListener('scroll', function (){
     //console.log(righty.scrollHeight);
+    //console.log(heighty);
 
     let vals = righty.scrollTop;   
 
     if (vals >= 1000 && vals <= 2500){
         
-        document.getElementById('profile-img').style.width = '30vw';
+        document.getElementById('profile-img').style.width = '35vw';
         document.getElementById('profile-img').style.transition = 'width, .5s ease-out';
+
+        let val = document.getElementsByClassName('fab');
+
+        for (x = 0; x < val.length; x++){
+            val[x].style.fontSize = "20px";
+            val[x].style.transition = "font-size, .5s ease-out";
+        }            
+        
     }
 
     else {
         document.getElementById('profile-img').style.width = '50vw'; 
         document.getElementById('profile-img').style.transition = 'width, .5s ease-in';
+
+
+         let val = document.getElementsByClassName('fab');
+
+        for (x = 0; x < val.length; x++){
+            val[x].style.fontSize = "30px";
+            val[x].style.transition = "font-size, .5s ease-in";
+        }
     }
 
     //console.log(vals);
@@ -91,6 +110,11 @@ document.getElementById('three').onclick = () => {
 
     document.getElementById('three').getElementsByTagName('div')[0].removeAttribute('id', 'slider2');
     fourth.scrollIntoView({ behavior: "smooth" });   
+
+    if (widthy < 767){
+        document.getElementById('footer').style.display = 'flex';
+    }
+    
     //    fourth.getElementsByTagName('div')[0].setAttribute('class', 'parallax');
 }
 
@@ -139,6 +163,12 @@ document.getElementById('four').onclick = function () {
     document.getElementById('one').scrollIntoView({behavior: "smooth"});
     document.getElementById('profile-img').style.width = '50vw';
 
+    if (widthy < 767){
+        document.getElementById('footer').style.display = 'none';
+    }
+    
+
 }
+
 
 
