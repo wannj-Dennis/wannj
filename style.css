@@ -264,6 +264,7 @@ h2, h3, h4, p {
         
         background: rgb(0,0,0);
         background: linear-gradient(to bottom, #1f1c2c, #928dab);
+        z-index: 1;
     }
 
     .infos {
@@ -273,6 +274,7 @@ h2, h3, h4, p {
         width: 100%;
         height: 100vh;
         overflow: hidden;
+        z-index: 2;
     }
 
     .footer-display {
@@ -283,19 +285,37 @@ h2, h3, h4, p {
 
         justify-content: center;
         align-items: center;
+        z-index: 3;
 
 
     }
 
-    .footer-display button {
+    .chevrons {
         width: 50px;
         height: 50px;
         margin: 0 10px;
 
         border-radius: 10px;
+        background-color: transparent;
 
         cursor: pointer;
 
+    }
+
+    .chevrons {
+        border: 0 solid transparent;
+        box-shadow: 0px 0px 0px transparent;
+    }
+
+    .chevrons .fas {
+        font-size: 40px;
+                
+        
+    }
+
+    .chevrons .fa-chevron-left,
+    .fa-chevron-right:hover {
+        transform: scale(.9);
     }
 
     .project-container {
@@ -348,7 +368,7 @@ h2, h3, h4, p {
     }
 
     #backs {
-        margin-left: 25px;
+        margin-left: 50px;
     }
 
     @keyframes button-effects {
