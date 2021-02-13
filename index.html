@@ -31,6 +31,7 @@
                 <div id="slider" class="info centers">
                     <blockquote>
                         <p>A JavaScript web developer first with a keen eye on User Experience both frontEnd and Backend. I am motivated by just how much limitless the web is and how great it is to express, present and connect with the world through it; not only that but also making it a dang great experience for all who interact with my solutions.</p>
+                        <p>I do some weekly problems here. Basically, I document problems that I find outstanding in one way or another and find solutions to them. Check out today's problem</p>
                         <cite>the web experience should be enjoyable</cite>
                     </blockquote>
                 </div>
@@ -43,17 +44,18 @@
                     <div class="centers">
                         <blockquote class="two-info">
                             <p>
-                                How can I make .dropdown-content overflow to the right side of #sidebar without changing size of sidebar? I've tried
-                                using floats but that did not work. I've also tried containing the first .squares and .dropdown-content together but
-                                that causes the second .squares to be positioned away from the bottom of the first .squares
+                                
+                                Complete a vowels and consonant function that:
+                                    <p>1. prints each vowel first in order of appearance in the word</p>
+                                    <p>2. prints each consonant in the same order of appearance in the word</p>
                             </p>
                         </blockquote>
-                        <iframe id="frame3" src="//jsfiddle.net/wannj/o379eqa5/2/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    
+                        <iframe id="frame3" width="100%" height="300" src="//jsfiddle.net/wannj/f507nca2/8/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                         <blockquote class="two-info">
                             <p>
-                                .dropdown-content is a class in the problem that ambiguously sits between two square classes.
-                                The idea is to solve the problem of placement of that class within the squares block and have it also display
-                                and show the dropdown content on the right of the squares block
+                                a given string is to be rearranged by two orders. The main order being, vowel letters precede consonants. The second order is to make sure that every letter, whether repeated or not is 
+                                a part of the new word result
 
                             </p>
                             
@@ -74,8 +76,10 @@
                     <div id="threes">
                         <blockquote><cite>Compare with my solution</cite></blockquote>
                     <div>
-                    <iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-                    <iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>                    
+                    <!--<iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    <iframe src="//jsfiddle.net/wannj/o379eqa5/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>-->
+                    <iframe width="100%" height="300" src="//jsfiddle.net/wannj/f507nca2/8/embedded/html/dark" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/wannj/f507nca2/8/embedded/js/dark" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                     </div>  
                 </div>
 
@@ -88,18 +92,23 @@
                 <div id="notes">
                     <div>
                         <h4>the HTML</h4>
-                        <p>insert</p>
+                        <p>contains the id that facilitates a display of the output</p>
                     </div>
 
                     <div>
-                        <h4>the CSS</h4>
+                        <h4>the method</h4>
                     </div>
                     <ol class="lists">
-                        <li>make sure the .dropdown-content is within a .square</li>
-                        <li>position of .dropdown-content should be absolute</li>
-                        <li> .dropdown-content set display to none</li>
-                        <li> get display of .dropdpown-content to block on hover</li>
-                    </ol> 
+                        <li>created a vowels array containing all the vowels</li>
+                        <li>created two arrays arr and arr2</li>
+                        <li>started a for loop to go through every letter in a given string</li>
+                        <li>checked every letter with the vowels arrays</li>
+                        <li>if letter is in vowel, then push the letter to arr</li>
+                        <li>if the letter is not included in the vowel array, push it to arr2</li>
+                        <li>create new string variable and push a concatenated arr + arr2</li>
+                        <li>create a second for loop that outputs every letter of the new string</li>
+                    </ol>
+                    
                 </div>
                 <div class="btns">
                     <button id="btn2" class="scroller">
